@@ -1,7 +1,5 @@
 FROM ruby:3.0
 
-WORKDIR /the/workdir/path
+WORKDIR /app
 
-COPY heroku_deploy ./
-
-CMD ["/bin/bash"]
+COPY . .
