@@ -22,6 +22,7 @@ test:
 
 production:
   <<: *default
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
+  database: clgwz2f8g008y9tp55gada0dn
+  username: clgwz2f8f008w9tp507a21yqb
+  password: <%= ENV['HEROKU_DEPLOY_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
